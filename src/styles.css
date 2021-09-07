@@ -21,6 +21,30 @@
     background-color: blue;
 }
 
+.blinky {
+    background-color: red;
+}
+
+.pinky {
+    background-color: pink;
+}
+
+.inky {
+    background-color: cyan;
+}
+
+.clyde {
+    background-color: orange;
+}
+
+.pac-man {
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.scared-ghost {
+    background-color: aquamarine;
+}
 
 .power-pellet {
     background-color: green;
