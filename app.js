@@ -1,3 +1,5 @@
+import renderBoard from "./utils/renderBoard";
+
 document.addEventListener('DOMContentLoaded', () => {
 
   const scoreDisplay = document.getElementById('score')
@@ -34,5 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
   ];
+
+  const squares = renderBoard(layout, grid)
 })
 
