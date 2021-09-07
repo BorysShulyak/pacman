@@ -1,0 +1,27 @@
+{
+  "name": "pacman",
+  "version": "1.0.0",
+  "description": "Pacman game",
+  "main": "app.js",
+  "devDependencies": {
+    "@babel/core": "7.14.3",
+    "@babel/preset-env": "7.14.4",
+    "parcel-bundler": "1.12.5",
+    "sass": "1.34.0"
+  },
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BorysShulyak/pacman.git"
+  },
+  "author": "Boris Shulyak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BorysShulyak/pacman/issues"
+  },
+  "homepage": "https://github.com/BorysShulyak/pacman#readme"
+}
