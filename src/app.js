@@ -5,6 +5,7 @@ import Ghost from "./entities/Ghost";
 import renderSpecialGhost from "./utils/renders/renderSpecialGhost";
 import renderPacman from "./utils/renders/renderPacman";
 import layoutIndexes from "./config/layoutIndexes";
+import isPortal from "./utils/verifications/isPortal";
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -24,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 37:
         if(pacmanCurrentIndex % width !== 0 && isPacmanMoveAvailable(squares, pacmanCurrentIndex, -1))
           pacmanCurrentIndex -= 1
-        if (squares[pacmanCurrentIndex -1] === squares[363]) {
-          pacmanCurrentIndex = 391
+        if (isPortal(squares, pacmanCurrentIndex, -1 )) {
+          pacmanCurrentIndex += 26
         }
         break
       case 38:
@@ -35,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
       case 39:
         if(pacmanCurrentIndex % width < width - 1 && isPacmanMoveAvailable(squares, pacmanCurrentIndex, 1))
           pacmanCurrentIndex += 1
-        if (squares[pacmanCurrentIndex +1] === squares[392]) {
-          pacmanCurrentIndex = 364
+        if (isPortal(squares, pacmanCurrentIndex, 1)) {
+          pacmanCurrentIndex -= 26
         }
         break
       case 40:

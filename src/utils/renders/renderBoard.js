@@ -1,4 +1,4 @@
-const layoutClassnamesMap = ['pac-dot', 'wall', 'ghost-lair', 'power-pellet'];
+const layoutClassnamesMap = ['pac-dot', 'wall', 'ghost-lair', 'power-pellet',,'portal'];
 
 const renderBoard = (layout, gridContainer) =>
   layout.map(layoutId => {

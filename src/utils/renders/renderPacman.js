@@ -1,3 +1,3 @@
 export default (squares, pacmanCurrentIndex) => {
-  squares[pacmanCurrentIndex].classList.remove('pac-man')
+  squares[pacmanCurrentIndex].classList.add('pac-man')
 }

@@ -3,7 +3,8 @@
     flex-wrap: wrap;
     width: 560px;
     height: 560px;
-    border: solid black;
+    border: solid #40d0c6;
+    margin: auto;
 }
 
 .grid div {
@@ -12,13 +13,18 @@
 }
 
 .pac-dot {
-    background-color: green;
+    background-color: #31be7d;
     border: 5px solid white;
+    border-radius: 50%;
     box-sizing: border-box;
 }
 
 .wall {
-    background-color: blue;
+    background-color: #872cd9;
+}
+
+.portal {
+
 }
 
 .blinky {
